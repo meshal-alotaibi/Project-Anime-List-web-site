@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  border: #282c34 solid 3px;
 }
 
 .App-logo {
@@ -35,4 +36,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.AnimeList{
+  border: green  5px solid;
 }
