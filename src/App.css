@@ -59,11 +59,73 @@
   display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 5px;
-    padding: 30px;
+    padding: 50px;
 
 } 
 
 
 h1{
   text-align: center;
+}
+
+.heading{
+  text-align: end;
+  padding: 10px;
+}
+
+.image-container {
+	position: relative;
+	transition: transform 0.2s;
+}
+
+.image-container:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+.image-container:hover .overlay {
+	opacity: 1;
+}
+
+
+.image-container:hover .watch {
+	opacity: 1;
+}
+
+/* .watch{
+	position: absolute;
+	background: rgba(0, 0, 0, 0.8);
+	width: 100%;
+	transition: 0.5s ease;
+	opacity: 0;
+	bottom: 0;
+	font-size: 20px;
+	padding: 20px;
+	text-align: center;
+} */
+
+/* .overlay{
+  position: absolute;
+	width: 50%;
+	transition: 0.5s ease;
+	opacity: 0;
+	bottom: 0;
+	font-size: 20px;
+	padding: 20px;
+	text-align: center;
+}
+
+.image-container:hover .overlay {
+	opacity: 1;
+} */
+
+.overlay{
+  position: absolute;
+	width: 50%;
+	transition: 0.5s ease;
+	opacity: 0;
+	bottom: 0;
+	font-size: 20px;
+	padding: 20px;
+	text-align: center;
 }

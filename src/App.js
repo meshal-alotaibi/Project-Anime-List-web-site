@@ -4,6 +4,8 @@ import AnimeItem from "./AnimeItem";
 import "./App.css";
 import ANTB from "./ANTB";
 import AnimeList from "./AnimeItem";
+import SearchBox from "./SearchBox";
+
 
 export default class App extends Component {
   render() {
@@ -20,7 +22,13 @@ export default class App extends Component {
     return (
       <div className="Anime-library">
         <div className="App">
+        
+
+       
+          <div className='heading'>
           <h1>Old Anime</h1>
+				<SearchBox />
+			</div>
           <div className="AnimeItem">
             {allAnimes}
             {/* <AnimeItem AnimeName={ANTB.data[0].attributes.titles.en} /> */}
@@ -34,3 +42,4 @@ export default class App extends Component {
     );
   }
 }
+
