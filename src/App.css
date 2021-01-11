@@ -121,7 +121,7 @@ h1{
 
 .overlay{
   position: absolute;
-	width: 50%;
+	width: 10%;
 	transition: 0.5s ease;
 	opacity: 0;
 	bottom: 0;
