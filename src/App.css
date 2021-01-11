@@ -41,3 +41,13 @@
 .AnimeList{
   border: green  5px solid;
 }
+
+
+.AnimeItem{
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+
+
+} 
