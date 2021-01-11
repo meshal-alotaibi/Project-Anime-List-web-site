@@ -26,6 +26,8 @@ export default class App extends Component {
             {/* <AnimeItem AnimeName={ANTB.data[0].attributes.titles.en} /> */}
             {/* <AnimeList AnimeName={ANTB.data[1].attributes.titles.en} Img={ANTB.data[1].attributes.posterImage.medium}/> 
       <AnimeList AnimeName={ANTB.data[2].attributes.titles.en} Img={ANTB.data[2].attributes.posterImage.medium}/>  */}
+
+      
           </div>
         </div>
       </div>

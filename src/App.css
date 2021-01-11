@@ -1,6 +1,9 @@
 .App {
-  text-align: center;
-  border: #282c34 solid 3px;
+  /* text-align: center;
+  border: #282c34 solid 3px; */
+
+  background:#F0F8FF;
+	
 }
 
 .App-logo {
@@ -45,9 +48,22 @@
 
 .AnimeItem{
 
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-
+  grid-gap: 5px;
+  padding: 30px;
+  /* grid-template-columns: 100px 50px 100px;
+  grid-template-rows: 80px auto 80px; 
+  column-gap: 10px;
+  row-gap: 15px; */ 
+  display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 5px;
+    padding: 30px;
 
 } 
+
+
+h1{
+  text-align: center;
+}
