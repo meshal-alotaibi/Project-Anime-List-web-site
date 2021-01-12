@@ -16,6 +16,7 @@ export default class App extends Component {
       moreAnime: [],
       LastNumber: 0,
       setSerachValue : '',
+      SearcAnime: []
     };
     this.handleChange = this.handleChange.bind(this);
   }
@@ -24,16 +25,29 @@ export default class App extends Component {
     this.getAnime()
   }
 
-  //  getMovieRequest = async () => {
-  // 	const url = `http://www.omdbapi.com/?s=star wars&apikey=263d22d8`;
+  SearchOnAnime = () => {
+    console.log("Search on Anime ...");
+    console.log(this.state.searchValue)
+    axios
+      .get(
+        `https://kitsu.io/api/edge/anime?filter[text]=${this.state.searchValue}`
+      )
+      .then((response) => {
+        console.log("RESPONSE: ", response);
+        console.log("DATA: ", response.data);
+   
+        
+        
+    // var children = hege.concat(stale);
+        this.setState({ SearcAnime: response.data.data }); 
+        this.setState({ moreAnime: [] });
+       
 
-  // 	const response = await fetch(url);
-  // 	const responseJson = await response.json();
-
-  // 	if (responseJson.Search) {
-  // 		setMovies(responseJson.Search);
-  // 	}
-  // };
+      })
+      .catch((err) => {
+        console.log("ERR: ", err);
+      });
+  };
 
   // handleChange(event) {
   //   this.setState({searchValue: event.target.value});
@@ -62,10 +76,17 @@ export default class App extends Component {
         console.log("ERR: ", err);
       });
   };
-
+  // removeAllTasks = () => {
+  //   console.log('CLEAR THE TASKS ... ');
+  //   this.setState({ tasks: [] });
+  // };
 
   render() {
     const allAnimes = this.state.moreAnime.map((item, i) => {
+      return <AnimeList item={item} id={i} />;
+    });
+
+    const oneAnimes = this.state.SearcAnime.map((item, i) => {
       return <AnimeList item={item} id={i} />;
     });
     // <h1> Titel={item.attributes.titles.en_jp} </h1>
@@ -84,6 +105,7 @@ export default class App extends Component {
 
               placeholder="Type to search"
             ></input>
+            <button onClick={this.SearchOnAnime}> Enter</button>
 
             {/* <button onClick={this.getMoreAnime}>Bring Anime</button>
 
@@ -91,6 +113,8 @@ export default class App extends Component {
           </div>
           <div className="AnimeItem">
             {allAnimes}
+
+            {oneAnimes}
           </div>
           <div className="AanimeButton">   <button onClick={this.getAnime}>Click for More Anime</button> </div>
 
