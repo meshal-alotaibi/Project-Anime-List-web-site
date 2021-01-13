@@ -8,7 +8,7 @@ import AnimeList from "./AnimeItem";
 import Search from "./Search";
 import axios from "axios";
 // import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button } from "reactstrap";
+
 
 
 export default class App extends Component {
