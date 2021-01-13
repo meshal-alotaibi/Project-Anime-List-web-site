@@ -12,14 +12,14 @@ export default class AnimeList extends Component {
 
     return (
       <div className="ANimeList">
-        <div className="image-container d-flex justify-content-start m-3">
-        <div className="overlay "> <img src={poster} alt="" /> </div>
+        <div className="image-container">
+        <div className="overlay "> <img src={poster} alt="" />  </div>
+       
          
         <img src={poster} alt="" />
           
-          <h3> {this.props.item.attributes.titles.en_jp} </h3>
-
-          <h3>{releaseDate.getFullYear()}</h3>
+          <h3 class="title"> {this.props.item.attributes.titles.en_jp} - {releaseDate.getFullYear()} </h3>
+          {/* <h2 class="date"> {releaseDate.getFullYear()}</h2> */}
           {/* <div className="overlay d-flex align-items-center justify-content-center"></div> */}
         </div>
 

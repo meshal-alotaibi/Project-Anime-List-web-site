@@ -7,6 +7,9 @@ import AnimeList from "./AnimeItem";
 // import SearchBox from "./SearchBox";
 import Search from "./Search";
 import axios from "axios";
+// import 'bootstrap/dist/css/bootstrap.min.css';
+import { Button } from "reactstrap";
+
 
 export default class App extends Component {
   constructor(props) {
@@ -95,17 +98,18 @@ export default class App extends Component {
       <div className="Anime-library">
         <div className="App">
           <div className="heading">
-            <h1>Old Anime</h1>
-            <input
+            <h1>Old Anime List </h1>
+            <input 
               type="text"
               value={this.state.searchValue}
               onChange={this.handleChange}
-              className="form-control"
-              // value={this.props.value}
-
               placeholder="Type to search"
             ></input>
-            <button onClick={this.SearchOnAnime}> Enter</button>
+            
+            <button type="button" class="btn btn-outline-dark" onClick={this.SearchOnAnime}> Enter</button>
+
+
+            
 
             {/* <button onClick={this.getMoreAnime}>Bring Anime</button>
 
@@ -116,7 +120,7 @@ export default class App extends Component {
 
             {oneAnimes}
           </div>
-          <div className="AanimeButton">   <button onClick={this.getAnime}>Click for More Anime</button> </div>
+          <div className="AanimeButton">   <button type="button" class="buttonMore" onClick={this.getAnime}>Click for More Anime</button> </div>
 
         </div>
        

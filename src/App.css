@@ -2,10 +2,10 @@
   /* text-align: center;
   border: #282c34 solid 3px; */
 
-  background:#F0F8FF;
+  background:#F2F1EF;
 	
 }
-
+/* 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -43,7 +43,7 @@
 
 .AnimeList{
   border: green  5px solid;
-}
+} */
 
 
 .AnimeItem{
@@ -58,19 +58,28 @@
   row-gap: 15px; */ 
   display: grid;
     grid-template-columns: auto auto auto;
-    grid-gap: 5px;
+    grid-gap: 15px;
     padding: 50px;
 
 } 
 
+.title{
+  color: #697184
+}
+.date{
+  color: #697184
+}
 
 h1{
   text-align: center;
+  color: #B1A6A4;
 }
 
 .heading{
   text-align: end;
   padding: 10px;
+  border: #8d8b8a solid;
+  background: #585756
 }
 
 .image-container {
@@ -104,7 +113,7 @@ h1{
 	text-align: center;
 } */
 
-/* .overlay{
+/* /* .overlay{
   position: absolute;
 	width: 50%;
 	transition: 0.5s ease;
@@ -113,25 +122,34 @@ h1{
 	font-size: 20px;
 	padding: 20px;
 	text-align: center;
-}
+} */
 
 .image-container:hover .overlay {
 	opacity: 1;
-} */
+} 
 
-.overlay{
+.overlay{ 
   position: absolute;
 	width: 10%;
 	transition: 0.5s ease;
 	opacity: 0;
 	bottom: 0;
 	font-size: 20px;
-	padding: 20px;
+	padding: 30px;
 	text-align: center;
-}
+} 
 
 .AanimeButton{
 
   text-align: center;
   padding: 0px 180px 100px 100px;
+}
+
+.buttonMore{
+
+  background-color: white;
+  color: black;
+  border: 2px solid #837f7f;
+  width: 250px
+  
 }
