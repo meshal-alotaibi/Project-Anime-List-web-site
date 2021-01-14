@@ -25,9 +25,9 @@ export default class App extends Component {
     console.log(this.state.fav);
   };
 
-removeFromWatch =(item)=>{
+removeFromWatch =(ele)=>{
 
-const newFav = this.state.fav.filter((item) => item !== item);
+const newFav = this.state.fav.filter((item) => item !== ele);
  
 this.setState({fav : newFav}, 
   function(){
