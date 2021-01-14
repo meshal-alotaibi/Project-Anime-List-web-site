@@ -1,61 +1,17 @@
 .App {
-  /* text-align: center;
-  border: #282c34 solid 3px; */
 
-  background:#F2F1EF;
+  text-align: end;
+  padding: 10px;
+  border: #8d8b8a solid;
+  background: #585756
 	
 }
-/* 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.AnimeList{
-  border: green  5px solid;
-} */
 
 
 .AnimeItem{
 
-  /* display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 5px;
-  padding: 30px;
-  /* grid-template-columns: 100px 50px 100px;
-  grid-template-rows: 80px auto 80px; 
-  column-gap: 10px;
-  row-gap: 15px; */ 
+ 
   display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 15px;
@@ -101,28 +57,7 @@ h1{
 	opacity: 1;
 }
 
-/* .watch{
-	position: absolute;
-	background: rgba(0, 0, 0, 0.8);
-	width: 100%;
-	transition: 0.5s ease;
-	opacity: 0;
-	bottom: 0;
-	font-size: 20px;
-	padding: 20px;
-	text-align: center;
-} */
 
-/* /* .overlay{
-  position: absolute;
-	width: 50%;
-	transition: 0.5s ease;
-	opacity: 0;
-	bottom: 0;
-	font-size: 20px;
-	padding: 20px;
-	text-align: center;
-} */
 
 .image-container:hover .overlay {
 	opacity: 1;
