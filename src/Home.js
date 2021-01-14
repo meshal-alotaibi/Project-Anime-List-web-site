@@ -143,7 +143,6 @@ export default class App extends Component {
               {" "}
               Enter
             </button>
-            <button onClick={this.addNew}> click</button>
 
 
           </div>
