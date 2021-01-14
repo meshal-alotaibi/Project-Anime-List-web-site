@@ -29,7 +29,7 @@ export default class Favitem extends Component {
 
         {/* <addFav onClick={this.handleClick}/>  */}
 
-        <button onClick={this.handleClick}> remove Anime from watch List </button>
+        <button class="ButtonStyle" onClick={this.handleClick}> remove Anime from watch List </button>
 
 
         {/* <h1>Name:{this.props.AnimeName}</h1>
