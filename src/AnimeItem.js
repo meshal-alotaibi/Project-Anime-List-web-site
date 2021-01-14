@@ -34,7 +34,7 @@ export default class AnimeList extends Component {
           {/* <div className="overlay d-flex align-items-center justify-content-center"></div> */}
         </div>
         <div class="buttonForAdd">  
-        <button onClick={this.handleClick}> add to watch </button>
+        <button class="ButtonStyle" onClick={this.handleClick}> Add Anime to watch List </button>
          </div> 
         
 
