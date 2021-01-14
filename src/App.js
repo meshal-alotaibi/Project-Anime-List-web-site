@@ -25,7 +25,15 @@ export default class App extends Component {
     console.log(this.state.fav);
   };
 
-  
+removeFromWatch =(item)=>{
+
+const newFav = this.state.fav.filter((item) => item !== item);
+ 
+this.setState({fav : newFav}, 
+  function(){
+    console.log(this.state.fav)
+  })
+}
 
   render() {
 
@@ -41,11 +49,12 @@ export default class App extends Component {
           <Route exact path="/" render={(props) => <Home addNewAnime={this.addtowatch} {...props} />} />
 
   
-          <Route  path="/watch" render={(props) => <Watch fav={this.state.fav} addNewAnime={this.addtowatch} {...props} />} />
+          <Route  path="/watch" render={(props) => <Watch fav={this.state.fav} removeFromWatch={this.removeFromWatch} {...props} />} />
         </div>
       </Router>
     );
   }
-  }
+ 
+}
 
 

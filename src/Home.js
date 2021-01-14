@@ -6,6 +6,7 @@ import ANTB from "./ANTB";
 import AnimeList from "./AnimeItem";
 // import watch from "./watch";
 import watch from './Watch';
+import addFav from "./addFav"
 
 import axios from "axios";
 import { BrowserRouter as Router, Route, Link, Switch} from "react-router-dom";
@@ -106,7 +107,7 @@ export default class App extends Component {
   render() {
     const allAnimes = this.state.moreAnime.map((item, i) => {
       return (
-        <AnimeList item={item} id={i} addAnime={() => this.props.addNewAnime(item)} />
+        <AnimeList item={item} id={i} addAnime={() => this.props.addNewAnime(item)} fav={this.addFav}/>
       );
     });
 
@@ -143,6 +144,8 @@ export default class App extends Component {
               Enter
             </button>
             <button onClick={this.addNew}> click</button>
+
+
           </div>
           <div className="AnimeItem">
 

@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import addFav from './addFav'
 
-export default class AnimeList extends Component {
+export default class Favitem extends Component {
 
   handleClick = e =>{
-    this.props.addAnime(this.props.item)
+    this.props.removeFromWatch(this.props.item)
   }
   render() {
     // let posterUrl = `https://image.tmdb.org/t/p/w780/${this.props.poster_path}`
@@ -30,7 +30,7 @@ export default class AnimeList extends Component {
 
         {/* <addFav onClick={this.handleClick}/>  */}
 
-        <button onClick={this.handleClick}> add to watch </button>
+        <button onClick={this.handleClick}> remove </button>
 
 
         {/* <h1>Name:{this.props.AnimeName}</h1>
