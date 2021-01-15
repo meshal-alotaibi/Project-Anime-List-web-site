@@ -20,7 +20,7 @@ export default class Favitem extends Component {
         <div className="image-container">
        
          
-        <img src={poster} alt="" />
+        <img src={poster} alt="" class="center"  />
           
           <h3 class="title"> {this.props.item.attributes.titles.en_jp} - {releaseDate.getFullYear()} </h3>
           {/* <h2 class="date"> {releaseDate.getFullYear()}</h2> */}

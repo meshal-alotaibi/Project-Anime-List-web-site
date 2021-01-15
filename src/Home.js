@@ -112,7 +112,7 @@ export default class App extends Component {
     });
 
     const oneAnimes = this.state.SearcAnime.map((item, i) => {
-      return <AnimeList item={item} id={i} />;
+      return <AnimeList item={item} id={i} addAnime={() => this.props.addNewAnime(item)} fav={this.addFav}/>;
     });
 
     return (
