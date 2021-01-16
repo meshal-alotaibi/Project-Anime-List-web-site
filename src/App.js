@@ -7,6 +7,9 @@ import Home from './Home';
 import Watch from './Watch';
 
 
+
+
+
 export default class App extends Component {
   constructor(props) {
     super(props);
@@ -38,18 +41,22 @@ this.setState({fav : newFav},
   render() {
 
     return (
+      
 <Router>
-        <div className="app">
-          <nav>
-            <Link to="/">HOME</Link> {' || '}
-            <Link to="/watch">watch </Link> 
+        <div className="menu-bar">
+        
+
+          <nav class="navbar">
+            <Link to="/"><button class="ButtonStyleSec"> Home Page</button></Link>
+            <Link to="/watch"><button class="ButtonStyleSec" > watch List </button> </Link> 
+            
           </nav>
-          {/* <Route exact path="/" component={Home} render={(props) => <App } */}
+
           
           <Route exact path="/" render={(props) => <Home addNewAnime={this.addtowatch} {...props} />} />
 
-  
-          <Route  path="/watch" render={(props) => <Watch fav={this.state.fav} removeFromWatch={this.removeFromWatch} {...props} />} />
+
+          <Route  path="/watch" render={(props) => <Watch   fav={this.state.fav} removeFromWatch={this.removeFromWatch} {...props} />} />
         </div>
       </Router>
     );

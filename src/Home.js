@@ -1,17 +1,14 @@
 import React, { Component } from "react";
 
-import AnimeItem from "./AnimeItem";
+
 import "./App.css";
 import ANTB from "./ANTB";
 import AnimeList from "./AnimeItem";
-// import watch from "./watch";
-import watch from './Watch';
-import addFav from "./addFav"
+
 
 import axios from "axios";
-import { BrowserRouter as Router, Route, Link, Switch} from "react-router-dom";
 
-// import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 export default class App extends Component {
   constructor(props) {
@@ -72,37 +69,7 @@ export default class App extends Component {
       });
   };
 
-  //   addNew = (e,anime) => {
-  // let watchLater = [...this.state.watchLater]
-  // watchLater.push(anime)
-  //     this.setState({ watchLater: watchLater});
-  //     console.log(this.state.watchLater)
-  //     this.setState({ moreAnime: [] });
-  // };
 
-//   addtowatch = (item) => {
-//     console.log(item);
-//     const fav = [...this.state.fav];
-//     fav.push(item);
-//     console.log("item : ", item);
-
-//     this.setState({ fav });
-//     console.log(this.state.fav);
-//   };
-
-  // handleFaveToggle = film => {
-  //   const faves = [...this.state.faves];
-  //   const filmIndex = faves.indexOf(film);
-
-  //   if (filmIndex !== -1) {
-  //     faves.splice(filmIndex, 1);
-  //     console.log(`Removing ${film.title} From Favors`);
-  //   } else {
-  //     faves.push(film);
-  //     console.log(`Adding ${film.title} To Favors`);
-  //   }
-  //   this.setState({ faves });
-  // };
 
   render() {
     const allAnimes = this.state.moreAnime.map((item, i) => {
@@ -127,8 +94,9 @@ export default class App extends Component {
 
 
             </div>
-
+<div class="inputSearch"> 
             <input
+            class="input"
               type="text"
               value={this.state.searchValue}
               onChange={this.handleChange}
@@ -137,13 +105,13 @@ export default class App extends Component {
 
             <button
               type="button"
-              class="btn btn-outline-dark"
+              class="InputButton"
               onClick={this.SearchOnAnime}
             >
               {" "}
               Enter
             </button>
-
+            </div>
 
           </div>
           <div className="AnimeItem">

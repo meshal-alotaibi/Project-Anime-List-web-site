@@ -1,3 +1,5 @@
+
+
 .App {
 
   text-align: end;
@@ -7,12 +9,16 @@
 	
 }
 
+.navbar{
+text-align: center;
+  
+}
+
 
 
 .AnimeItem{
 
- /* display: flex;
- flex-wrap: wrap; */
+
   display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 15px;
@@ -21,9 +27,7 @@
 } 
 
 .image-container {
-	/* position: relative;
-  transition: transform 0.2s;
-  background-color: #B1A6A4; */
+
   margin: 1rem;
   background-color: #f1ecec;
   border-radius: 3px;
@@ -83,37 +87,36 @@ h1{
 }
 
 
-/* 
-.image-container:hover {
-	cursor: pointer;
-	transform: scale(1.1);
+.inputSearch{
+
+  padding: 0px 20px 10px;
+
 }
 
-.image-container:hover .overlay {
-	opacity: 1;
+.input{
+
+  width: 10%;
+  padding: 5px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+
+}
+.input:focus{
+  border: 3px solid #555;
+
 }
 
+.InputButton{
+  background-color: white;
+  color: black;
+  border: 2px solid #837f7f;
+  font-size: 12px;
+  width: 5%;
+  padding: 5px 10px;
+  margin: 8px 0;
 
-.image-container:hover .watch {
-	opacity: 1;
 }
 
-
-
-.image-container:hover .overlay {
-	opacity: 1;
-} 
-
-.overlay{ 
-  position: absolute;
-	width: 10%;
-	transition: 0.5s ease;
-	opacity: 0;
-	bottom: 0;
-	font-size: 20px;
-	padding: 30px;
-	text-align: center;
-}  */
 
 .AanimeButton{
 
@@ -126,9 +129,18 @@ h1{
   background-color: white;
   color: black;
   border: 2px solid #837f7f;
-  width: 250px
+  width: 40%;
+  font-size: 16px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 5px ;
   
 }
+
+.buttonMore:hover {opacity: 1}
 
 .buttonForAdd{
 
@@ -141,4 +153,34 @@ h1{
   background-color: white;
   color: black;
   border: 2px solid #837f7f;
+  font-size: 12px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 5px ;
+  text-align: center;
 }
+.ButtonStyle:hover {opacity: 1}
+
+.ButtonStyleSec{
+
+  background-color: white;
+  color: black;
+  border: 2px solid #e7e7e7;
+  padding: 10px ;
+  width: 50%;
+  font-size: 16px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  
+}
+
+
+.ButtonStyleSec:hover {opacity: 1}
+
+
